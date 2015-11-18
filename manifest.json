@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "cookie extraction tool demo",
+  "description": "A tool for extracting a specific cookie value",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "sessions",
+    "cookies"
+  ]
+}

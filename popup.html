@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>cookie extraction tool</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            padding: 40px 10px 40px 10px;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo-text {
+            position: relative;
+            float: right;
+            font-size: 2em;
+            color: #385988;
+            top: 20px;
+        }
+
+        #cookies {
+            width: 300px;
+            display: table;
+        }
+
+        #cookies .cookie {
+            display: table-row;
+        }
+
+        #cookies .cookie .label, #cookies .cookie label {
+            border: none;
+            display: table-cell;
+            width: 50px;
+        }
+
+        #cookies .cookie input {
+            display: table-cell;
+            width: 210px;
+            margin-bottom: 3px;
+
+            padding: 10px;
+            border: none;
+            border-bottom: solid 2px #c9c9c9;
+            transition: border 0.3s;
+        }
+
+        #cookies .cookie input:focus,
+        #cookies .cookie input.focus {
+            border-bottom: solid 2px #969696;
+        }
+
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+<div class="logo" id="logo">
+    <img src="/logo.png" alt="acando" width="50%"/>
+</div>
+<div class="logo-text">
+    kontrast-cookie
+</div>
+
+<div id="cookies"></div>
+</body>
+
+</html>
+
